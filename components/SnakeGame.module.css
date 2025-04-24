@@ -1,0 +1,103 @@
+.gameContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.gameInfo {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 400px;
+  margin-bottom: 20px;
+}
+
+.gameBoard {
+  width: 400px;
+  height: 400px;
+  border: 2px solid #000;
+  position: relative;
+}
+
+.snakeSegment {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  background-color: #4CAF50;
+}
+
+.food {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  background-color: #FF5722;
+  border-radius: 50%;
+}
+
+.gameOver {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.gameOver button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.themeSelector {
+  margin-top: 20px;
+}
+
+.themeSelector button {
+  margin: 0 10px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.gameStatus {
+  margin-top: 10px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.gameInstructions {
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: 14px;
+  color: #666;
+}
+
+/* Themes */
+.grassland {
+  background-color: #E8F5E9;
+}
+
+.grassland .gameBoard {
+  background-color: #C8E6C9;
+}
+
+.desert {
+  background-color: #FFF3E0;
+}
+
+.desert .gameBoard {
+  background-color: #FFE0B2;
+}
+
+.desert .snakeSegment {
+  background-color: #795548;
+}
+
+.desert .food {
+  background-color: #F57C00;
+}
